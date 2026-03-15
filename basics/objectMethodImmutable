@@ -1,0 +1,40 @@
+//Object method immutable
+
+let person = {
+    name: "shanu",
+    age:10,
+    isActive: false
+}
+
+// console.log(person);
+
+// //1. freeze() => once we do this we can add modify or delete the object
+
+// Object.freeze(person);
+
+// //add
+// //Cannot add property isEmpolyed, object is not extensible
+// person.isEmpolyed = "yes";
+// console.log(person);
+
+// //update
+// //Cannot assign to read only property 'isActive' of object '#<Object>'
+// person.isActive=true;
+// console.log(person);
+
+// //delete
+// //TypeError: Cannot delete property 'age' of #<Object>
+// delete person.age;
+
+// console.log(person);
+
+
+// 2. seal() => this will allow modifcation but not alllow to remove or delete
+
+Object.seal(person);
+person.isActive=true;
+console.log(person);
+
+delete person.age;
+console.log(person);//TypeError: Cannot delete property 'age' of 
+
