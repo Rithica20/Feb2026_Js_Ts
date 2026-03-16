@@ -26,7 +26,7 @@ console.log(typeof p1); //object
 // In java we have a manual method System.gc to call garbage collector
 //but in JS we dont have any predef method to call GC
 
-let p2 = new Product("samsung",100).name;
+let p2 = new Product("samsung",100).name; //Only the name property value is stored.
 console.log(p2);
 console.log(typeof p2); //string
 

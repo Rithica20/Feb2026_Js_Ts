@@ -8,7 +8,7 @@ let person = {
 
 // console.log(person);
 
-// //1. freeze() => once we do this we can add modify or delete the object
+// //1. freeze() => once we do this we cannot  add modify or delete the object
 
 // Object.freeze(person);
 
