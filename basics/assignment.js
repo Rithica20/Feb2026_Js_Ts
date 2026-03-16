@@ -9,3 +9,39 @@ for(let ele of broswer){
     index--;
 }
 console.log(browserRev);
+
+
+
+//nested objects
+
+let user = {
+    name: 'tom',
+    age: 30,
+    address: {
+        city: 'bangalore',
+        pincode: '160055',
+        area: {
+            areaname: 'new area'
+        }
+    }
+}
+
+//iterate with for in loop
+
+for( let ele in user){
+    if(typeof user[ele] == "object"){
+        for (let innerE in user[ele]){
+            // console.log(innerE + ":" + user[ele][innerE]);
+            if(typeof user[ele][innerE] == "object"){
+                for( let dinE in user[ele][innerE]){
+                    console.log(dinE + ":"+ user[ele][innerE][dinE]);
+                }
+            }else{
+                console.log(innerE +":"+user[ele][innerE]);
+            }
+        }
+    }
+    else{
+        console.log(ele +":" +user[ele]);
+    }
+}

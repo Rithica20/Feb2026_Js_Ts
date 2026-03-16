@@ -65,21 +65,4 @@ console.log(a1);//shanu
 console.log(a2);//shanu
 console.log(a3);//shanu
 
-//nested objects
-
-let user = {
-    name: 'tom',
-    age: 30,
-    address: {
-        city: 'bangalore',
-        pincode: '160055',
-        area: {
-            areaname: 'new area'
-        }
-    }
-}
-
-console.log(user.age);
-console.log(user.address.pincode);
-console.log(user.address.area.areaname);
 
