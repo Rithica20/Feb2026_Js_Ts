@@ -1,0 +1,30 @@
+//function are also coming from reference type family(non-primituve)
+//function body will reside in heap memory whereas the function calling will be stack memory
+
+
+//gc - to clear heap memory not stack memory 
+// if stack memory is full we will get set overflow error in java
+
+function testing() {
+    console.log('Hello');
+    pop();
+}
+
+function pop() {
+    console.log('Bye');
+    testing();
+}
+
+
+testing();
+
+//RangeError:: Maximum call stack size exceeded
+//at console.value(node: internal / console / constructor: 302: 13)
+
+
+//limear way :: login-homepage/productpage- addtocar-payment- place order
+// 
+
+//always call a function in a linear way not in a circular way
+
+
