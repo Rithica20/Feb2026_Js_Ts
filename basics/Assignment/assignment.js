@@ -64,27 +64,26 @@ function broswer(browserName){
     case "chrome":
         console.log("chrome launched successfully");
         return true;
-        break;
+       
 
     case "firefox":
         console.log("firefox launched successfully");
         return true;
-        break;
+       
     
     case "edge":
         console.log("edge launched successfully");
         return true;
-        break;
-
+       
      case "safari":
         console.log("safari launched successfully");
         return true;
-        break;  
+     
         
      default:
         console.log("Invalid browser name"+browserName);
         return false;
-        break;   
+        
 
   }
 }
@@ -141,3 +140,52 @@ let browserName = "chrome";
   }
 
 // browser("chrome");
+
+
+//Assigment from anonymous function.js
+
+/**
+ * 
+ * @param {string} browserName 
+ */
+let broswerLaunch = function(browserName){
+    switch(browserName.trim().toLowerCase()){
+        case "chrome":
+            console.log("chrome launched sucessfully");
+            break;
+        case "firefox":
+            console.log("firefox launched sucessfully");
+            break;
+        case "edge":
+            console.log("edge launched sucessfully");
+            break;
+        default:
+            console.log("enter valid browser name:"+browserName);       
+    }
+}
+
+broswerLaunch("aaa");
+
+// assignment on arrow functions
+
+/**
+ * 
+ * @param {string} broswerName 
+ */
+let browLaunch = (broswerName) =>{
+    switch(broswerName.trim().toLowerCase()){
+        case "chrome":
+            console.log("chrome launched sucessfully");
+            break;
+        case "firefox":
+            console.log("firefox launched sucessfully");
+            break;
+        case "edge":
+            console.log("edge launched sucessfully");
+            break;
+        default:
+            console.log("enter valid browser name:"+broswerName);       
+    }
+}
+
+browLaunch("ione");
